@@ -1,0 +1,264 @@
+[
+ 
+  {
+    "movie_name": "The Shawshank Redemption",
+    "director": "Frank Darabont",
+    "lead_actor": "Tim Robbins"
+  },
+  {
+    "movie_name": "The Godfather",
+    "director": "Francis Ford Coppola",
+    "lead_actor": "Marlon Brando"
+  },
+  {
+    "movie_name": "The Dark Knight",
+    "director": "Christopher Nolan",
+    "lead_actor": "Christian Bale"
+  },
+  {
+    "movie_name": "The Lord of the Rings: The Return of the King",
+    "director": "Peter Jackson",
+    "lead_actor": "Elijah Wood"
+  },
+  {
+    "movie_name": "Forrest Gump",
+    "director": "Robert Zemeckis",
+    "lead_actor": "Tom Hanks"
+  },
+  {
+    "movie_name": "Inception",
+    "director": "Christopher Nolan",
+    "lead_actor": "Leonardo DiCaprio"
+  },
+  {
+    "movie_name": "Fight Club",
+    "director": "David Fincher",
+    "lead_actor": "Brad Pitt"
+  },
+  {
+    "movie_name": "The Matrix",
+    "director": "Lana Wachowski, Lilly Wachowski",
+    "lead_actor": "Keanu Reeves"
+  },
+  {
+    "movie_name": "Goodfellas",
+    "director": "Martin Scorsese",
+    "lead_actor": "Ray Liotta"
+  },
+  {
+    "movie_name": "The Empire Strikes Back",
+    "director": "Irvin Kershner",
+    "lead_actor": "Mark Hamill"
+  },
+  {
+    "movie_name": "The Godfather: Part II",
+    "director": "Francis Ford Coppola",
+    "lead_actor": "Al Pacino"
+  },
+  {
+    "movie_name": "The Silence of the Lambs",
+    "director": "Jonathan Demme",
+    "lead_actor": "Jodie Foster"
+  },
+  {
+    "movie_name": "Schindler's List",
+    "director": "Steven Spielberg",
+    "lead_actor": "Liam Neeson"
+  },
+  {
+    "movie_name": "The Dark Knight Rises",
+    "director": "Christopher Nolan",
+    "lead_actor": "Christian Bale"
+  },
+  {
+    "movie_name": "The Prestige",
+    "director": "Christopher Nolan",
+    "lead_actor": "Christian Bale"
+  },
+  {
+    "movie_name": "Interstellar",
+    "director": "Christopher Nolan",
+    "lead_actor": "Matthew McConaughey"
+  },
+  {
+    "movie_name": "Gladiator",
+    "director": "Ridley Scott",
+    "lead_actor": "Russell Crowe"
+  },
+  {
+    "movie_name": "The Lion King",
+    "director": "Roger Allers, Rob Minkoff",
+    "lead_actor": "Matthew Broderick"
+  },
+  {
+    "movie_name": "The Departed",
+    "director": "Martin Scorsese",
+    "lead_actor": "Leonardo DiCaprio"
+  },
+  {
+    "movie_name": "Whiplash",
+    "director": "Damien Chazelle",
+    "lead_actor": "Miles Teller"
+  },
+  {
+    "movie_name": "Se7en",
+    "director": "David Fincher",
+    "lead_actor": "Brad Pitt"
+  },
+  {
+    "movie_name": "The Usual Suspects",
+    "director": "Bryan Singer",
+    "lead_actor": "Kevin Spacey"
+  },
+  {
+    "movie_name": "Léon: The Professional",
+    "director": "Luc Besson",
+    "lead_actor": "Jean Reno"
+  },
+  {
+    "movie_name": "City of God",
+    "director": "Fernando Meirelles, Kátia Lund",
+    "lead_actor": "Alexandre Rodrigues"
+  },
+  {
+    "movie_name": "Saving Private Ryan",
+    "director": "Steven Spielberg",
+    "lead_actor": "Tom Hanks"
+  },
+  {
+    "movie_name": "Spirited Away",
+    "director": "Hayao Miyazaki",
+    "lead_actor": "Rumi Hiiragi"
+  },
+  {
+    "movie_name": "Parasite",
+    "director": "Bong Joon-ho",
+    "lead_actor": "Song Kang-ho"
+  },
+  {
+    "movie_name": "Back to the Future",
+    "director": "Robert Zemeckis",
+    "lead_actor": "Michael J. Fox"
+  },
+  {
+    "movie_name": "Casablanca",
+    "director": "Michael Curtiz",
+    "lead_actor": "Humphrey Bogart"
+  },
+  {
+    "movie_name": "Pulp Fiction",
+    "director": "Quentin Tarantino",
+    "lead_actor": "John Travolta"
+  },
+  {
+    "movie_name": "The Shining",
+    "director": "Stanley Kubrick",
+    "lead_actor": "Jack Nicholson"
+  },
+  {
+    "movie_name": "The Green Mile",
+    "director": "Frank Darabont",
+    "lead_actor": "Tom Hanks"
+  },
+  {
+    "movie_name": "The Wizard of Oz",
+    "director": "Victor Fleming",
+    "lead_actor": "Judy Garland"
+  },
+  {
+    "movie_name": "The Great Dictator",
+    "director": "Charlie Chaplin",
+    "lead_actor": "Charlie Chaplin"
+  },
+  {
+    "movie_name": "A Clockwork Orange",
+    "director": "Stanley Kubrick",
+    "lead_actor": "Malcolm McDowell"
+  },
+  {
+    "movie_name": "One Flew Over the Cuckoo's Nest",
+    "director": "Milos Forman",
+    "lead_actor": "Jack Nicholson"
+  },
+  {
+    "movie_name": "Taxi Driver",
+    "director": "Martin Scorsese",
+    "lead_actor": "Robert De Niro"
+  },
+  {
+    "movie_name": "Amélie",
+    "director": "Jean-Pierre Jeunet",
+    "lead_actor": "Audrey Tautou"
+  },
+  {
+    "movie_name": "The Intouchables",
+    "director": "Olivier Nakache, Éric Toledano",
+    "lead_actor": "François Cluzet"
+  },
+  {
+    "movie_name": "The Godfather: Part III",
+    "director": "Francis Ford Coppola",
+    "lead_actor": "Al Pacino"
+  },
+  {
+    "movie_name": "The Big Lebowski",
+    "director": "Joel Coen, Ethan Coen",
+    "lead_actor": "Jeff Bridges"
+  },
+  {
+    "movie_name": "The Terminator",
+    "director": "James Cameron",
+    "lead_actor": "Arnold Schwarzenegger"
+  },
+  {
+    "movie_name": "Alien",
+    "director": "Ridley Scott",
+    "lead_actor": "Sigourney Weaver"
+  },
+  {
+    "movie_name": "Jaws",
+    "director": "Steven Spielberg",
+    "lead_actor": "Roy Scheider"
+  },
+  {
+    "movie_name": "The Social Network",
+    "director": "David Fincher",
+    "lead_actor": "Jesse Eisenberg"
+  },
+  {
+    "movie_name": "The Conjuring",
+    "director": "James Wan",
+    "lead_actor": "Patrick Wilson"
+  },
+  {
+    "movie_name": "Her",
+    "director": "Spike Jonze",
+    "lead_actor": "Joaquin Phoenix"
+  },
+  {
+    "movie_name": "La La Land",
+    "director": "Damien Chazelle",
+    "lead_actor": "Ryan Gosling"
+  },
+  {
+    "movie_name": "Moonlight",
+    "director": "Barry Jenkins",
+    "lead_actor": "Mahershala Ali"
+  },
+  {
+    "movie_name": "The Revenant",
+    "director": "Alejandro González Iñárritu",
+    "lead_actor": "Leonardo DiCaprio"
+  },
+  {
+    "movie_name": "The Martian",
+    "director": "Ridley Scott",
+    "lead_actor": "Matt Damon"
+  },
+  {
+    "movie_name": "Mad Max: Fury Road",
+    "director": "George Miller",
+    "lead_actor": "Tom Hardy"
+  }
+]
+

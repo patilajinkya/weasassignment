@@ -1,0 +1,263 @@
+[
+  {
+    "movie_name": "The Shawshank Redemption",
+    "release_date": "1994-09-22",
+    "imdb_rating": 9.3
+  },
+  {
+    "movie_name": "The Godfather",
+    "release_date": "1972-03-24",
+    "imdb_rating": 9.2
+  },
+  {
+    "movie_name": "The Dark Knight",
+    "release_date": "2008-07-18",
+    "imdb_rating": 9.0
+  },
+  {
+    "movie_name": "The Lord of the Rings: The Return of the King",
+    "release_date": "2003-12-17",
+    "imdb_rating": 8.9
+  },
+  {
+    "movie_name": "Forrest Gump",
+    "release_date": "1994-07-06",
+    "imdb_rating": 8.8
+  },
+  {
+    "movie_name": "Inception",
+    "release_date": "2010-07-16",
+    "imdb_rating": 8.8
+  },
+  {
+    "movie_name": "Fight Club",
+    "release_date": "1999-10-15",
+    "imdb_rating": 8.8
+  },
+  {
+    "movie_name": "The Matrix",
+    "release_date": "1999-03-31",
+    "imdb_rating": 8.7
+  },
+  {
+    "movie_name": "Goodfellas",
+    "release_date": "1990-09-19",
+    "imdb_rating": 8.7
+  },
+  {
+    "movie_name": "The Empire Strikes Back",
+    "release_date": "1980-05-21",
+    "imdb_rating": 8.7
+  },
+  {
+    "movie_name": "The Godfather: Part II",
+    "release_date": "1974-12-20",
+    "imdb_rating": 9.0
+  },
+  {
+    "movie_name": "The Silence of the Lambs",
+    "release_date": "1991-02-14",
+    "imdb_rating": 8.6
+  },
+  {
+    "movie_name": "Schindler's List",
+    "release_date": "1993-12-15",
+    "imdb_rating": 9.0
+  },
+  {
+    "movie_name": "The Dark Knight Rises",
+    "release_date": "2012-07-20",
+    "imdb_rating": 8.4
+  },
+  {
+    "movie_name": "The Prestige",
+    "release_date": "2006-10-20",
+    "imdb_rating": 8.5
+  },
+  {
+    "movie_name": "Interstellar",
+    "release_date": "2014-11-07",
+    "imdb_rating": 8.6
+  },
+  {
+    "movie_name": "Gladiator",
+    "release_date": "2000-05-05",
+    "imdb_rating": 8.5
+  },
+  {
+    "movie_name": "The Lion King",
+    "release_date": "1994-06-15",
+    "imdb_rating": 8.5
+  },
+  {
+    "movie_name": "The Departed",
+    "release_date": "2006-10-06",
+    "imdb_rating": 8.5
+  },
+  {
+    "movie_name": "Whiplash",
+    "release_date": "2014-10-10",
+    "imdb_rating": 8.5
+  },
+  {
+    "movie_name": "Se7en",
+    "release_date": "1995-09-22",
+    "imdb_rating": 8.6
+  },
+  {
+    "movie_name": "The Usual Suspects",
+    "release_date": "1995-08-16",
+    "imdb_rating": 8.5
+  },
+  {
+    "movie_name": "Léon: The Professional",
+    "release_date": "1994-09-14",
+    "imdb_rating": 8.5
+  },
+  {
+    "movie_name": "City of God",
+    "release_date": "2002-02-08",
+    "imdb_rating": 8.6
+  },
+  {
+    "movie_name": "Saving Private Ryan",
+    "release_date": "1998-07-24",
+    "imdb_rating": 8.6
+  },
+  {
+    "movie_name": "Spirited Away",
+    "release_date": "2001-07-20",
+    "imdb_rating": 8.6
+  },
+  {
+    "movie_name": "Parasite",
+    "release_date": "2019-05-30",
+    "imdb_rating": 8.6
+  },
+  {
+    "movie_name": "Back to the Future",
+    "release_date": "1985-07-03",
+    "imdb_rating": 8.5
+  },
+  {
+    "movie_name": "Casablanca",
+    "release_date": "1942-11-26",
+    "imdb_rating": 8.5
+  },
+  {
+    "movie_name": "Pulp Fiction",
+    "release_date": "1994-10-14",
+    "imdb_rating": 8.9
+  },
+  {
+    "movie_name": "The Shining",
+    "release_date": "1980-05-23",
+    "imdb_rating": 8.4
+  },
+  {
+    "movie_name": "The Green Mile",
+    "release_date": "1999-12-10",
+    "imdb_rating": 8.6
+  },
+  {
+    "movie_name": "The Wizard of Oz",
+    "release_date": "1939-08-15",
+    "imdb_rating": 8.0
+  },
+  {
+    "movie_name": "The Great Dictator",
+    "release_date": "1940-10-15",
+    "imdb_rating": 8.4
+  },
+  {
+    "movie_name": "A Clockwork Orange",
+    "release_date": "1971-12-19",
+    "imdb_rating": 8.3
+  },
+  {
+    "movie_name": "One Flew Over the Cuckoo's Nest",
+    "release_date": "1975-11-19",
+    "imdb_rating": 8.7
+  },
+  {
+    "movie_name": "Taxi Driver",
+    "release_date": "1976-02-08",
+    "imdb_rating": 8.3
+  },
+  {
+    "movie_name": "Amélie",
+    "release_date": "2001-04-25",
+    "imdb_rating": 8.3
+  },
+  {
+    "movie_name": "The Intouchables",
+    "release_date": "2011-11-02",
+    "imdb_rating": 8.5
+  },
+  {
+    "movie_name": "The Godfather: Part III",
+    "release_date": "1990-12-25",
+    "imdb_rating": 7.6
+  },
+  {
+    "movie_name": "The Big Lebowski",
+    "release_date": "1998-03-06",
+    "imdb_rating": 8.1
+  },
+  {
+    "movie_name": "The Terminator",
+    "release_date": "1984-10-26",
+    "imdb_rating": 8.0
+  },
+  {
+    "movie_name": "Alien",
+    "release_date": "1979-05-25",
+    "imdb_rating": 8.4
+  },
+  {
+    "movie_name": "Jaws",
+    "release_date": "1975-06-20",
+    "imdb_rating": 8.0
+  },
+  {
+    "movie_name": "The Social Network",
+    "release_date": "2010-10-01",
+    "imdb_rating": 8.0
+  },
+  {
+    "movie_name": "The Conjuring",
+    "release_date": "2013-07-19",
+    "imdb_rating": 7.5
+  },
+  {
+    "movie_name": "Her",
+    "release_date": "2013-12-18",
+    "imdb_rating": 8.0
+  },
+  {
+    "movie_name": "La La Land",
+    "release_date": "2016-12-09",
+    "imdb_rating": 8.0
+  },
+  {
+    "movie_name": "Moonlight",
+    "release_date": "2016-10-21",
+    "imdb_rating": 8.0
+  },
+  {
+    "movie_name": "The Revenant",
+    "release_date": "2015-12-25",
+    "imdb_rating": 8.0
+  },
+  {
+    "movie_name": "The Martian",
+    "release_date": "2015-10-02",
+    "imdb_rating": 8.0
+  },
+  {
+    "movie_name": "Mad Max: Fury Road",
+    "release_date": "2015-05-15",
+    "imdb_rating": 8.1
+  }
+]
+
