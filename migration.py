@@ -201,6 +201,6 @@ sorting_from_to_uuid()
 for index, value in enumerate(from_uuid):
     add_cross_ref(coll_names[0], value, refnames[0], to_uuid[index])
 for index, value in enumerate(to_uuid):
-    add_cross_ref(coll_names[1], value, refnames[1], from_uuid[0\index])
+    add_cross_ref(coll_names[1], value, refnames[1], from_uuid[index])
 client_src.close()
 client_tgt.close()
