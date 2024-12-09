@@ -1,117 +1,156 @@
-Skip to content
-Navigation Menu
-patilajinkya
-weasassignment
+import weaviate
+import os
+import weaviate.classes as wvc
+from weaviate.auth import AuthCredentials
+from weaviate.collections import Collection
+import pandas as pd
+from weaviate.client import WeaviateClient
+from weaviate.classes.init import Auth
+from weaviate.classes.config import Configure, Property, DataType, ReferenceProperty
+from weaviate.classes.query import MetadataQuery, QueryReference
+import warnings
+from tqdm import tqdm
+import subprocess
+warnings.filterwarnings("ignore", category=DeprecationWarning)
+movie1_name = []
+movie2_name = []
+movie_name =""
+src_list_of_linkon = []
+src_list_of_prop_name = {}
+tgt_list_of_linkon = []
+tgt_list_of_prop_name = {}
+src_from_uuid=[]
+tgt_to_uuid=[]
+refs = {}
+from_uuid = []
+to_uuid = []
+src_col = []
+tgt_col = []
+migr_ref_names = []
+uuids = []
+weave_url = os.environ["WEAV_URL"]
+weave_api = os.environ["WEAV_API"]
+coll_names = ["Movie1", "Movie2"]
+refnames = ["hasactor", "hasrating"]
+link_on_props = ["hasactor", "hasrating"]
+tgt_collection = ["Movie2", "Movie1"]
+# coll_names = ["Country", "Currency"]
+# refnames = ["hascurrency", "hascapital"]
+# link_on_props = ["hascurrency", "hascapital"]
+# tgt_collection = ["Currency", "Country"]
 
-Type / to search
-Code
-Issues
-Pull requests
-Actions
-Projects
-Security
-Insights
-Settings
-Files
-Go to file
-t
-migration.py
-weavs.py
-Editing migration.py in weasassignment
-Breadcrumbsweasassignment
-/
-migration.py
-in
-main
+client_src = weaviate.connect_to_local(
+    headers={
+        "X-OpenAI-Api-Key": os.getenv("OPENAI_APIKEY")
+    }
+)
 
-Edit
+client_tgt = weaviate.connect_to_wcs(
+    cluster_url=weave_url,
+    auth_credentials=Auth.api_key(weave_api),
 
-Preview
-Indent mode
+    headers={
+        "X-OpenAI-Api-Key": os.getenv("OPENAI_APIKEY")
+    },
+        skip_init_checks=True
+)
 
-Spaces
-Indent size
+def create_collection(client_in: WeaviateClient, collection_name: str, enable_mt=False, ):
 
-4
-Line wrap mode
-
-No wrap
-Editing migration.py file contents
-Selection deleted
-147
-148
-149
-150
-151
-152
-153
-154
-155
-156
-157
-158
-159
-160
-161
-162
-163
-164
-165
-166
-167
-168
-169
-170
-171
-172
-173
-174
-175
-176
-177
-178
-179
-180
-181
-182
-183
-184
-185
-186
-187
-188
-189
-190
-191
-192
-193
-194
-195
-196
-197
-198
-199
-200
-201
-202
-203
-204
-205
-206
-207
-208
-209
-210
-211
-212
-213
-214
-215
+    movies = client_in.collections.create(
+        name=collection_name,
+        multi_tenancy_config=wvc.config.Configure.multi_tenancy(enabled=enable_mt),
 
 
 
 
-def sorting_from_to_uuid():
+    )
+
+    return movies
+
+def add_references(coll_src, coll_tgt, name): #Adding reference properties
+    category = client_tgt.collections.get(coll_src)
+    category.config.add_reference(
+        ReferenceProperty(
+            name=name,
+            target_collection=coll_tgt
+        )
+    )
+    return True
+
+
+def migrate_data(collection_src: Collection, collection_tgt: Collection): #migrating data objects and preserving the uuids
+    with collection_tgt.batch.fixed_size(batch_size=100) as batch:
+        for q in tqdm(collection_src.iterator(include_vector=True)):
+            batch.add_object(
+                properties=q.properties,
+                vector=q.vector["title_vector"],
+                uuid=q.uuid,
+
+
+
+
+            )
+
+    return True
+
+
+
+
+def getting_refs_props(coll_name, uuids, list_of_prop_name, link_on_prop): #getting uuids for both collections
+    collection = client_tgt.collections.get(coll_name)
+
+    response = collection.query.fetch_objects(limit=100,
+                                              return_references=QueryReference(
+                                                  link_on=link_on_prop,
+                                                  return_properties=["movie_name"],
+                                              )
+                                              )
+    response_obj = response.objects
+    l = 0
+    while l < len(response_obj):
+        for index, value in enumerate(response_obj):
+            data_string = str(response_obj[index])
+            start_uuid = data_string.find("_WeaviateUUIDInt('") + len("_WeaviateUUIDInt('")
+            end_uuid = data_string.find("')", start_uuid)
+            uuid = data_string[start_uuid:end_uuid]
+            uuids.append(uuid)
+            l += 1
+
+
+    return uuids
+
+def gettings_refs(coll_name, uuids, list_of_prop_name, link_on_prop): #getting reference property which is common and creating two dict with mvoie name as common name
+
+
+    for uuid in uuids:
+        collection = client_src.collections.get(coll_name)
+        response = collection.query.fetch_object_by_id(uuid, return_references=QueryReference(
+            link_on=link_on_prop,
+            return_properties=["movie_name"],
+            return_references=[]))
+        movie_name = response.properties["movie_name"]
+
+        #src_list_of_linkon.append(prop_name)
+        list_of_prop_name[uuid] = movie_name
+
+        for prop_name in response.references:
+
+            prop_name = prop_name
+
+            movie_name = response.properties["movie_name"]
+
+            src_list_of_linkon.append(prop_name)
+        list_of_prop_name[uuid] = movie_name
+
+
+
+
+
+
+
+
+def sorting_from_to_uuid():      #sorting and getting two uuids from_uuid and to_uuid
     for key1, value1 in src_list_of_prop_name.items():
         for key2, value2 in tgt_list_of_prop_name.items():
             if value1 == value2:
@@ -122,7 +161,7 @@ def sorting_from_to_uuid():
 
     return from_uuid, to_uuid
 
-def add_cross_ref(coll_name, src_uuid, ref_name, tgt_uuid):
+def add_cross_ref(coll_name, src_uuid, ref_name, tgt_uuid): #adding cross reference
     collection = client_tgt.collections.get(coll_name)
     collection.data.reference_add(
         from_uuid=src_uuid,
@@ -158,15 +197,11 @@ for index, value in enumerate(coll_names):
     if value == coll_names[0]:
         gettings_refs(value, src_from_uuid, src_list_of_prop_name, link_on_props[index])
     if value == coll_names[1]:
-        print(value)
-        print(link_on_props[index])
+
         gettings_refs(value, tgt_to_uuid, tgt_list_of_prop_name, link_on_props[index])
 
 
 sorting_from_to_uuid()
-
-
-
 
 
 
@@ -177,5 +212,3 @@ for index, value in enumerate(to_uuid):
     add_cross_ref(coll_names[1], value, refnames[1], from_uuid[index])
 client_src.close()
 client_tgt.close()
-Use Control + Shift + m to toggle the tab key moving focus. Alternatively, use esc then tab to move to the next interactive element on the page.
-Editing weasassignment/migration.py at main · patilajinkya/weasassignment 
